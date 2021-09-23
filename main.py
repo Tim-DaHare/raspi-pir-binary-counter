@@ -37,6 +37,7 @@ def pir_triggered(pin):
     if (pirval):
         count += 1
         lightLEDsAsBinaryFromNumber(count)
+        print("New movement detected. Amount of movements detected: " + str(count))
 
 GPIO.add_event_detect(PIR, GPIO.BOTH, callback=pir_triggered)
 
