@@ -44,3 +44,4 @@ GPIO.add_event_detect(PIR, GPIO.BOTH, callback=pir_triggered)
 disableLEDs()
 
 signal.pause()
+
